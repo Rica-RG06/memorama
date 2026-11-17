@@ -1,0 +1,31 @@
+body {
+    font-family: Comic Sans MS;
+    text-align: center;
+    background: #9C250C;
+    margin: 25;
+    padding: 25px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 100px; /* Nota: en la imagen muestra 10px */
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    user-select: none;
+}
+.card.flipped {
+    background: #0C2442;
+    border: 2px solid #999;
+}
